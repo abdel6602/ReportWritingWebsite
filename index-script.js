@@ -5,7 +5,7 @@ const image_holder_close = document.getElementById('image-holder-close')
 const message = document.getElementsByClassName('message')[0]
 
 image_holder_close.addEventListener('click', () => {
-    window.location.href = "/Home/home.html";
+    window.location.href = "/home.html";
 });
 
 var random_number = Math.floor(Math.random() * 27);
