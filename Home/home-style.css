@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* outline: 1px dashed black; */
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    /* border: solid thin red; */
+    background-color: #fff4e3;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff4e3;
+    height: 10%;
+}
+
+.logo{
+    font-family: sans-serif;
+    font-size: 24pt;
+    color:#3b220e;
+    font-weight: bold;
+}
+
+.offer-section{
+    display:grid;
+    margin-top: 50px;
+}
+
+.offer-section > img{
+    grid-column: 0;
+    grid-row: 0;
+    width: 90vw;
+    height: 400px;
+    z-index: 0;
+}
+
+.offer-section-button{
+    width: 6rem;
+    height: 2rem;
+    background-color: transparent;
+    border: solid 1px rgb(0, 0, 0);
+    position: relative;
+    left: 77%;
+    bottom:7em;
+    font-weight: bolder;
+}
+
+.offer-section-button:hover{
+    color: white;
+    border: 2px solid #3b220e;
+    transition: ease-in-out 0.3s;
+    background-color: #3b220e;
+    cursor: pointer;
+}
+
+
+.resources-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90vw;
+    height: inherit;
+}
+
+.resources-section > h2{
+    font-family: sans-serif;
+    font-size: 20pt;
+    color:#3b220e;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resources > a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+.resources{
+    display: flex;
+    width: 90vw;
+    height: 400px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.resources > a > div{
+    height : 400px;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resources-image{
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+
+
+@media all and (max-width:1000px){
+    .offer-section > img{
+        width: 90vw;
+        height:200px
+    }
+    .offer-section > a > button{
+        position: relative;
+        left: 75%;
+        bottom:4em;
+    }
+
+    .resources{
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .resources > a{
+        margin-top: 2rem;
+    }
+}
+
+@media all and (max-width:500px){
+    .offer-section > a > button{
+        position: relative;
+        left: 69%;
+        bottom:4em;
+    }
+
+}
