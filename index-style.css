@@ -8,8 +8,14 @@ body{
     width: calc(100vw - 2px);
     height: calc(100vh - 2px);
     display: flex;
+	flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+p{
+	font-family:sans-serif;
+	margin-top:30px
 }
 
 .image-holder{
