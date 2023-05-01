@@ -1,0 +1,15 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffebcd;
+    color:white;
+}
+
+div{
+    background-color: rgb(59, 59, 59);
+    padding: 20px;
+    border-radius: 20px;
+}
