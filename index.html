@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mind Masters</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="index-style.css">
+    <title>Envelope Open Animation</title>
+    <link rel="stylesheet" href="./style.css">
 
 </head>
-<body>
-    <div class="image-holder">
-        <div class="image-holder-close">
-            <i class="fa-solid fa-square-xmark" id="image-holder-close"></i>
-        </div>
-        <img src="" alt="message" class="message">    
-    </div>
-	<p>Press the X to continue</p>
-    
 
-    <script src="index-script.js"></script>
+<body>
+    <div class="container">
+        <div class="envlope-wrapper">
+            <div id="envelope" class="close">
+                <div class="front flap"></div>
+                <div class="front pocket"></div>
+                <div class="letter">
+                    <div class="words" id="line1">Don't Be Busy,</div>
+                    <div class="words" id="line2">Be Productive</div>
+                    <div class="words" id="line3"></div>
+                </div>
+                <div class="hearts">
+                    <div class="heart a1"></div>
+                    <div class="heart a2"></div>
+                    <div class="heart a3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="reset">
+            <button id="open">Open</button>
+            <button id="reset">Reset</button>
+        </div>
+        
+        <a href="/home.html"><button id="close">X</button></a>
+    </div>
+
+    <h2>Press the X to continue</h2>
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="./script.js"></script>
+
 </body>
+
 </html>
